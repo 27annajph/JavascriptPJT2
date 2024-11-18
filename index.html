@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>E-BookMart</h1>
+      <button
+        id="cart-button"
+        class="cart-button"
+        onclick="location.href='cart.html'"
+      >
+        Cart (0)
+      </button>
+    </nav>
+
+    <div class="container">
+      <div class="controls">
+        <select id="sort-price">
+          <option value="">Sort by</option>
+          <option value="low-to-high">Price: Low to High</option>
+          <option value="high-to-low">Price: High to Low</option>
+        </select>
+        <input type="text" id="search-bar" placeholder="Search products..." />
+      </div>
+
+      <div id="product-container"></div>
+    </div>
+  <footer>
+        <p>© 2024 E-Book Mart. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
